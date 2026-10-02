@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>For Julie ♡</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- BACKGROUND -->
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+
+    <div class="stars">
+      <span>✦</span>
+      <span>✧</span>
+      <span>·</span>
+      <span>✦</span>
+      <span>·</span>
+      <span>✧</span>
+      <span>✦</span>
+    </div>
+
+    <!-- MAIN CARD -->
+    <main class="card">
+      <!-- NAVIGATION -->
+      <nav>
+        <div class="logo">J</div>
+
+        <div class="nav-links">
+          <a href="#home">HOME</a>
+          <a href="#feelings">FEELINGS</a>
+          <a href="#intention">INTENTION</a>
+          <a href="#promise">PROMISE</a>
+        </div>
+      </nav>
+
+      <!-- HERO -->
+      <section class="hero" id="home">
+        <div class="hero-text">
+          <p class="small-title">A MESSAGE I WANT YOU TO READ</p>
+
+          <h1>
+            JULIE,<br />
+            I WANT<br />
+            <span>TO PURSUE YOU.</span>
+          </h1>
+
+          <p class="subtitle">
+            This isn't just a random message. I made this because I want you to
+            know what is really in my heart.
+          </p>
+
+          <div class="hero-buttons">
+            <button onclick="openSection('feelings')">What I Feel ♡</button>
+
+            <button class="outline" onclick="openSection('intention')">
+              My Intention
+            </button>
+          </div>
+        </div>
+
+        <!-- ART -->
+        <div class="art">
+          <div class="moon"></div>
+
+          <div class="glow-heart">♡</div>
+
+          <div class="butterfly">🦋</div>
+
+          <div class="flower flower1">✦</div>
+
+          <div class="flower flower2">✧</div>
+
+          <div class="flower flower3">✦</div>
+
+          <div class="vine vine1">〰〰〰</div>
+
+          <div class="vine vine2">〰〰</div>
+
+          <div class="leaf-art">🌿</div>
+        </div>
+      </section>
+
+      <!-- MUSIC PLAYER -->
+      <div class="music-player">
+        <div class="record" id="record">
+          <div class="record-center">♫</div>
+        </div>
+
+        <div class="song-info">
+          <span> NOW PLAYING </span>
+
+          <strong> I Thought I Saw Your Face Today </strong>
+
+          <small> She & Him </small>
+        </div>
+
+        <button class="play-button" id="playButton" onclick="toggleMusic()">
+          ▶
+        </button>
+
+        <input
+          type="range"
+          id="volume"
+          min="0"
+          max="1"
+          step="0.01"
+          value="0.6"
+        />
+      </div>
+
+      <!-- BOTTOM BUTTONS -->
+      <div class="bottom">
+        <div class="quick-buttons">
+          <button onclick="openSection('why')">Why You?</button>
+
+          <button onclick="openSection('feelings')">My Feelings</button>
+
+          <button onclick="openSection('intention')">My Intention</button>
+
+          <button onclick="openSection('promise')">My Promise</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- =========================
+         POPUP
+    ========================== -->
+
+    <div id="popup" class="popup">
+      <div class="popup-card">
+        <button class="close" onclick="closeSection()">×</button>
+
+        <!-- WHY YOU -->
+
+        <div class="content" id="why">
+          <p class="label">WHY YOU</p>
+
+          <h2>Why do I want to pursue you?</h2>
+
+          <p>
+            Julie, I don't think I can explain everything about why I like you
+            in just a few words. There is something about you that makes me want
+            to know you more.
+          </p>
+
+          <p>
+            I like your personality, the way you carry yourself, and the little
+            things about you that probably don't even seem important to you.
+          </p>
+
+          <p>
+            The more I get to know you, the more I realize that I don't just
+            want to admire you from a distance.
+          </p>
+
+          <p class="highlight">
+            I want to be someone who gets the chance to genuinely know you.
+          </p>
+
+          <button onclick="openSection('feelings')">
+            Continue to My Feelings →
+          </button>
+        </div>
+
+        <!-- FEELINGS -->
+
+        <div class="content" id="feelings">
+          <p class="label">MY FEELINGS</p>
+
+          <h2>I genuinely like you.</h2>
+
+          <p>I want to be honest with you, Julie. I really like you.</p>
+
+          <p>
+            This isn't something I want to hide behind jokes or vague words. I
+            want you to know that my interest in you is real.
+          </p>
+
+          <p>
+            I think about you more than I probably should. Sometimes I'll see
+            something that reminds me of you, hear a song, or remember something
+            you said, and suddenly you're on my mind again.
+          </p>
+
+          <p>
+            And honestly, I don't want to pretend that you're just another
+            person to me.
+          </p>
+
+          <p class="highlight">You are someone I want to pursue.</p>
+
+          <p>
+            I want to take the time to know you, understand you, support you,
+            and hopefully become someone you can trust.
+          </p>
+
+          <button onclick="openSection('intention')">
+            What I Intend to Do →
+          </button>
+        </div>
+
+        <!-- INTENTION -->
+
+        <div class="content" id="intention">
+          <p class="label">MY INTENTION</p>
+
+          <h2>I don't want to play with your feelings.</h2>
+
+          <p>Julie, I want to make my intention clear.</p>
+
+          <p>
+            I am not making this page just to impress you for one night. I'm
+            making it because I want you to understand that I genuinely want to
+            pursue you.
+          </p>
+
+          <p>
+            I want to take things seriously and give myself the chance to know
+            you better.
+          </p>
+
+          <p>
+            I don't expect you to immediately give me an answer or feel exactly
+            the same way. I respect your feelings and your decision.
+          </p>
+
+          <p class="highlight">
+            What I am asking for is simply the chance to pursue you and show you
+            through my actions how sincere I am.
+          </p>
+
+          <p>
+            I want to take you on dates, talk with you, make memories with you,
+            and slowly build something meaningful if you are willing.
+          </p>
+
+          <button onclick="openSection('notworthy')">
+            Something I Need to Admit →
+          </button>
+        </div>
+
+        <!-- NOT WORTHY -->
+
+        <div class="content" id="notworthy">
+          <p class="label">SOMETHING I NEED TO ADMIT</p>
+
+          <h2>Sometimes, I don't feel worthy of you.</h2>
+
+          <p>I also want to be honest about something else.</p>
+
+          <p>
+            Sometimes I'm disappointed with myself. I look at who I am right now
+            and think about all the things I still need to improve.
+          </p>
+
+          <p>
+            There are moments when I wonder if I'm good enough for someone like
+            you.
+          </p>
+
+          <p class="highlight">Sometimes I feel like I'm not worthy of you.</p>
+
+          <p>
+            But I don't want that feeling to become an excuse. I don't want to
+            stay the same person and simply complain about my shortcomings.
+          </p>
+
+          <p>If I want to pursue you, then I also want to work on myself.</p>
+
+          <p>
+            I want to become more mature, more patient, more responsible, and
+            better at showing the people I care about that they matter.
+          </p>
+
+          <button onclick="openSection('promise')">My Promise to You →</button>
+        </div>
+
+        <!-- PROMISE -->
+
+        <div class="content" id="promise">
+          <p class="label">MY PROMISE</p>
+
+          <h2>I want to show you, not just tell you.</h2>
+
+          <p>
+            I can't promise that I'll be perfect. I know I will make mistakes.
+          </p>
+
+          <p>But I can promise that I will try to be honest with you.</p>
+
+          <p>
+            I will respect your boundaries. I will respect your decisions. I
+            will listen when you speak.
+          </p>
+
+          <p>
+            And if you allow me to pursue you, I want to prove that my
+            intentions are genuine through the way I treat you.
+          </p>
+
+          <p class="highlight">
+            I don't want to rush you. I just want the opportunity to slowly earn
+            your trust and affection.
+          </p>
+
+          <p>
+            I want to be there for the good days, the ordinary days, and even
+            the difficult ones.
+          </p>
+
+          <button onclick="openSection('final')">One Last Thing ♡</button>
+        </div>
+
+        <!-- FINAL -->
+
+        <div class="content" id="final">
+          <p class="label">ONE LAST THING</p>
+
+          <h2>Julie, I choose to pursue you.</h2>
+
+          <p>
+            I could have kept all of this to myself, but I don't want to hide
+            what I feel.
+          </p>
+
+          <p>Gsto tka.</p>
+
+          <p>I want to know you more.</p>
+
+          <p>I want to spend time with you.</p>
+
+          <p>I want to make memories with you.</p>
+
+          <p>
+            And most importantly,
+            <strong> I want to pursue you sincerely. </strong>
+          </p>
+
+          <p>I'm not asking you to promise me anything right now.</p>
+
+          <p>I'm simply asking you to let me try.</p>
+
+          <p class="big-heart">♡</p>
+
+          <p class="final-line">
+            If you let me, I'll do my best to make this pursuit something worth
+            remembering.
+          </p>
+
+          <div class="signature">— James</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AUDIO -->
+
+    <audio id="music" loop>
+      <source src="julie.mp3" type="audio/mpeg" />
+
+      Your browser does not support audio.
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
